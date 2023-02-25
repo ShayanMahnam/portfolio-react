@@ -3,8 +3,8 @@ import HeroImg from "../assets/MiniTwitter.webp";
 
 import {
   AiOutlineTwitter,
-  AiOutlineYoutube,
-  AiOutlineFacebook,
+  AiOutlineGithub,
+  AiOutlineLinkedin,
 } from "react-icons/ai";
 
 const Hero = () => {
@@ -13,8 +13,8 @@ const Hero = () => {
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="hero-info pb-5 md:pb-0">
           <h1 className="text-4xl lg:text-6xl">
-            Hi, <br />I am <span className="text-accent">a</span>mrin <br />
-            Frontend Developer
+            Hi, <br />I am <span className="text-accent">Sh</span>ayan <br />
+            FullStack Developer
           </h1>
 
           <p className="py-5">
@@ -27,27 +27,27 @@ const Hero = () => {
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineTwitter size={40} />{" "}
+              <AiOutlineGithub size={40} />{" "}
             </a>
             <a
               href="https://www.youtube.com/@coderamrin"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineYoutube size={40} />{" "}
+              <AiOutlineTwitter size={40} />{" "}
             </a>
             <a
               href="https://www.facebook.com/CoderAmrin/"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineFacebook size={40} />{" "}
+              <AiOutlineLinkedin size={40} />{" "}
             </a>
           </div>
 
           <a
             href="/#projects"
-            className=" btn bg-accent  border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent"
+            className=" btn bg-accent rounded-md border-2 border-[#7477FF] text-white px-6 py-3 hover:bg-transparent"
           >
             See Projects
           </a>

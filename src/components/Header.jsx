@@ -36,20 +36,20 @@ const Header = () => {
       <nav
         className={!toggle ? "mobile-nav left-[-100%]" : "mobile-nav left-0"}
       >
-        <ul className="flex flex-col">
-          <li>
+        <ul className="flex justify-center items-center flex-col">
+          <li className="space-y-1.5 flex">
             <a href="/#about">About</a>
           </li>
-          <li>
+          <li className="space-y-1.5 flex">
             <a href="/#projects">Projects</a>
           </li>
-          <li>
+          <li className="space-y-1.5 flex">
             <a href="/#blog">Blog</a>
           </li>
-          <li>
+          <li className="space-y-1.5 flex">
             <a href="/#contact">Contact</a>
           </li>
-          <li>
+          <li className="space-y-1.5 flex">
             <a href="/#resume">Resume</a>
           </li>
         </ul>
