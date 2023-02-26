@@ -3,6 +3,10 @@ import Hotel from "../assets/Hotel.webp";
 import DomTVShow from "../assets/DomTVShow.webp";
 import SnakeGame from "../assets/SnakeGame.webp";
 import FutureForChildren from "../assets/FutureForChildren.webp";
+import MiniTwitter from "../assets/MiniTwitter.webp";
+import DiceGame from "../assets/DiceGame.webp";
+import { AiOutlineGithub } from "react-icons/ai";
+import { SiNetlify } from "react-icons/si";
 
 
 const Projects = () => {
@@ -10,30 +14,44 @@ const Projects = () => {
     {
       img: DomTVShow,
       title: "Dom TV Show",
-      desc: " A multi author blog. Built with Node.js, MongoDB, React, Redux and Tailwind CSS ",
-      live: "https://devlogg.onrender.com/",
-      code: "https://github.com/Coderamrin/devlog",
+      desc: " DOM challenge in CodeYourFuture course. using TVMaze api built with JavaScript",
+      live: "https://cyf-shayanmahnam-tv.netlify.app/",
+      code: "https://github.com/ShayanMahnam/tv-show-dom-project",
     },
     {
       img: FutureForChildren,
       title: "Future For Children",
-      desc: "Free website template directory for SaaS and Degital Agency. Built with Bootstrap, JQuery and JavaScript",
-      live: "https://uilogs.xyz/",
-      code: "https://github.com/Coderamrin/html-templates",
+      desc: "My teamwork project in CodeYourFuture course. Built with HTML, CSS and JavaScript",
+      live: "https://cyf-the-achievers-futureforchildren.netlify.app/",
+      code: "https://github.com/ShayanMahnam/FutureForChildren",
     },
     {
       img: Hotel,
       title: "Hotel React",
-      desc: "Frontend Mentor challange directory, solved with vanilla CSS",
-      live: "https://build-10-css-projects.netlify.app/",
-      code: "https://github.com/Coderamrin/build-10-css-projects",
+      desc: "React project from CodeYourFuture course",
+      live: "https://cyf-shayanmahnam-hotel-react.netlify.app/",
+      code: "https://github.com/ShayanMahnam/cyf-hotel-react",
     },
     {
       img: SnakeGame,
       title: "Snake Game",
-      desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
-      live: "https://get-inspirred.netlify.app/",
-      code: "https://github.com/Coderamrin/get-inspired",
+      desc: "Snake game, inspiration from WebDevSimplified. ",
+      live: "https://snakegame-shayan.netlify.app/",
+      code: "https://github.com/ShayanMahnam/Snake-Game",
+    },
+    {
+      img: DiceGame,
+      title: "Dice Game",
+      desc: "I used CodeYourFuture Blocks to build this project.",
+      live: "https://shayandicegame.netlify.app/",
+      code: "https://github.com/ShayanMahnam/CYF_Dont_go_higher_than_11",
+    },
+    {
+      img: MiniTwitter,
+      title: "Mini Twitter",
+      desc: "This was one of my challenges from CodeYourFuture course. Built with JS",
+      live: "https://cyf-shayanmahnam-mini-twitter.netlify.app/",
+      code: "https://github.com/ShayanMahnam/Mini-Twitter",
     },
   ];
 
@@ -41,13 +59,13 @@ const Projects = () => {
     <section className="bg-primary text-white px-5 py-32" id="projects">
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
+          <div className="flex"></div>
           <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
             Projects
           </h2>
 
           <p className="pb-5">
-            These are some of my best projects. I have built these with React,
-            MERN and vanilla CSS. Check them out.
+            These are some of my best projects. Check them out.
           </p>
         </div>
 
@@ -67,15 +85,19 @@ const Projects = () => {
                 <div className="mx-auto">
                   <a
                     href={project.live}
-                    className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
+                    className="pr-4 inline-block text-teal-400 hover:text-white"
+                    target={"_blank"}
+                    rel="noreferrer"
                   >
-                    Live
+                    {" "}
+                    <SiNetlify size={40} />{" "}
                   </a>
                   <a
                     href={project.code}
-                    className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
+                    className="pr-4 inline-block text-white hover:text-purple-600"
                   >
-                    Code
+                    {" "}
+                    <AiOutlineGithub size={40} />{" "}
                   </a>
                 </div>
               </div>

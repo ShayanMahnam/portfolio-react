@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "../assets/DiceGame.webp";
+import AboutImg from "../assets/waving.PNG";
 
 const About = () => {
   return (

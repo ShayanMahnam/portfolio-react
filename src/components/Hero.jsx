@@ -1,10 +1,10 @@
 import React from "react";
-import HeroImg from "../assets/MiniTwitter.webp";
+import HeroImg from "../assets/laptop.PNG";
 
 import {
   AiOutlineTwitter,
   AiOutlineGithub,
-  AiOutlineLinkedin,
+  AiFillLinkedin,
 } from "react-icons/ai";
 
 const Hero = () => {
@@ -23,25 +23,25 @@ const Hero = () => {
 
           <div className="flex py-5 ">
             <a
-              href="https://twitter.com/CoderAmrin"
+              href="https://github.com/ShayanMahnam"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
               <AiOutlineGithub size={40} />{" "}
             </a>
             <a
-              href="https://www.youtube.com/@coderamrin"
+              href="https://twitter.com/shayanmahnam"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
               <AiOutlineTwitter size={40} />{" "}
             </a>
             <a
-              href="https://www.facebook.com/CoderAmrin/"
+              href="https://www.linkedin.com/in/shayan-mahnam-176301188/"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
-              <AiOutlineLinkedin size={40} />{" "}
+              <AiFillLinkedin size={40} />{" "}
             </a>
           </div>
 
